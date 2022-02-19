@@ -1,5 +1,5 @@
-// "use strict"
-const numberOfNews = prompt('Siz qancha yangilik ko`rdinggiz?');
+"use strict"
+const numberOfNews = prompt('Siz qancha yangilik ko`rdinggiz?')
 const personalNewsDB = {
     count: numberOfNews,
     news = {},
@@ -7,9 +7,9 @@ const personalNewsDB = {
     genres = [],
     privat = false,
 };
-const a = prompt('Oxirgi ko`rgan yangiliklaringizdan biri?');
-const b = prompt('Unga qancha baxo bergan bo`lardinggiz?');
+const a = prompt('Oxirgi ko`rgan yangiliklaringizdan biri?')
+const b = prompt('Unga qancha baxo bergan bo`lardinggiz?')
 
- personalNewsDB.news[a] = b;
+ personalNewsDB.news[a] = b
 
- console.log(personalNewsDB);
+ console.log(personalNewsDB)
