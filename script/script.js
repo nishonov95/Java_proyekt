@@ -8,14 +8,14 @@ function startProjekt(){
         numberOfNews = +prompt('Siz qancha yangilik ko`rdinggiz?')
     }
 }
-//startProjekt()
+startProjekt()
 
 const personalNewsDB = {
     count: numberOfNews,
     news: {},
     actors: {},
     genres: [],
-    privat: true,
+    privat: false,
 }
 alert("foydalanuvchi siz oxirgi o`qigan 2 ta yangilikgizni kirtishingiz so`raladi!!!")
 
@@ -36,7 +36,7 @@ function rememberNews(){
         }
 
 }
-//rememberNews()
+rememberNews()
 
 function showPersanalLevel(){
     if(personalNewsDB.count<10){
@@ -51,7 +51,7 @@ function showPersanalLevel(){
     } 
 
 }
-//showPersanalLevel()
+showPersanalLevel()
 
 function showMyDB(hidden){
     if (!hidden){
@@ -63,19 +63,19 @@ function showMyDB(hidden){
 showMyDB(personalNewsDB.privat)
 
 
-function writeYourGenres(){
-    for(let i=1; i<4; i++){
-        personalNewsDB.genres[i] = +prompt("Sizga Qaysi Janr yoqadi")
-        if(personalNewsDB.genres[i] !=null || personalNewsDB.genres[i] !="" || personalNewsDB.genres[i].length<5){
-            console.log(i,"-tayyor")
-            alert(i+"- janrni kiritdingiz")
-        } else {
-            console.log(i,"-kiritilmadi")
-            alert(i+"- janrni kiritmadiz")
-            i--
-        }
-    } 
-}
-writeYourGenres()
+// function writeYourGenres(){
+//     for(let i=1; i<4; i++){
+//         personalNewsDB.genres[i] = +prompt("Sizga Qaysi Janr yoqadi")
+//         if(personalNewsDB.genres[i] !=null || personalNewsDB.genres[i] !="" || personalNewsDB.genres[i].length<5){
+//             console.log(i,"-tayyor")
+//             alert(i+"- janrni kiritdingiz")
+//         } else {
+//             console.log(i,"-kiritilmadi")
+//             alert(i+"- janrni kiritmadiz")
+//             i--
+//         }
+//     } 
+// }
+// writeYourGenres()
 
-console.log(personalNewsDB.genres);
+// console.log(personalNewsDB.genres);
